@@ -1,7 +1,5 @@
 # Projeto de Teoria dos Grafos - Parte 2
 
-Projeto desenvolvido para a disciplina de Teoria dos Grafos.
-
 O objetivo é identificar as panelinhas e as pessoas influentes na rede de
 amizades de um condomínio. O grafo é não orientado e tem 25 moradores e
 29 amizades.
@@ -17,13 +15,17 @@ amizades de um condomínio. O grafo é não orientado e tem 25 moradores e
 ## Compilação
 
 ```powershell
+
 gcc -Wall -Wextra -std=c90 -pedantic-errors projeto_grafos_parte2.c -o projeto_grafos_parte2.exe
+
 ```
 
 ## Execução
 
 ```powershell
+
 .\projeto_grafos_parte2.exe
+
 ```
 
 A rede é definida no código. O programa exibe o cadastro e as amizades dos
