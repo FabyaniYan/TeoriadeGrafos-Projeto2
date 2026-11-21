@@ -340,7 +340,9 @@ void pessoasComMaisContatos(Vertice G[], int ordem) {
  *   - o Cormen faz uma busca a partir de um unico vertice s; aqui e feita
  *     uma busca a partir de cada morador ainda nao visitado, para achar
  *     todos os componentes (e o numero de buscas = numero de grupos).
- * Complexidade: O(n + m), n = moradores e m = amizades.
+ *   A busca em largura custa O(n + m), com n moradores e m amizades.
+ *  Para exibir os k grupos, o programa percorre os n moradores por grupo.
+ * A funcao completa custa O(n + m + k*n) no pior caso.
  */
 void gruposIsolados(Vertice G[], int ordem){
 	int *grupo;   /* grupo[i] = numero do grupo do morador i (0 = nao visitado) */
@@ -849,13 +851,10 @@ int main(void)
 	if(!sucesso)
 		fprintf(stderr, "Memoria insuficiente para analisar as panelinhas.\n");
 
-	/* 7. libera toda a memoria dinamica */
-	destruirPanelinhas(lista);
-	destruirGrafo(&G, ordem);
+    /* 7. libera toda a memoria dinamica */
+    destruirPanelinhas(lista);
+    destruirGrafo(&G, ordem);
 
-	/* 8. segura a janela do console no Dev-C++ */
-	printf("Pressione ENTER para terminar\n");
-	getchar();
-
-	return sucesso ? EXIT_SUCCESS : EXIT_FAILURE;
+    return sucesso ? EXIT_SUCCESS : EXIT_FAILURE;
+}
 }
