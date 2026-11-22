@@ -12,21 +12,15 @@ amizades de um condomínio. O grafo é não orientado e tem 25 moradores e
 | Rafael Araujo Cabral Moreira | 10441919 |
 | Bruna Amorim Maia | 10431883 |
 
-## Compilação
+## Compilação e execução 
 
 ```powershell
 
-gcc -Wall -Wextra -std=c90 -pedantic-errors projeto_grafos_parte2.c -o projeto_grafos_parte2.exe
+cc -ansi -pedantic -Wall -Wextra projeto_grafos_parte2.c -o projeto_grafos_parte2
+./projeto_grafos_parte2
 
 ```
 
-## Execução
-
-```powershell
-
-.\projeto_grafos_parte2.exe
-
-```
 
 A rede é definida no código. O programa exibe o cadastro e as amizades dos
 moradores, os resultados das consultas da Parte 1 e os resultados da Parte 2.
