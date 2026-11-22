@@ -857,4 +857,3 @@ int main(void)
 
     return sucesso ? EXIT_SUCCESS : EXIT_FAILURE;
 }
-}
